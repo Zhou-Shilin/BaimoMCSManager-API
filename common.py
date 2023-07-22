@@ -42,7 +42,7 @@ def get_settings(url, apikey):
 
     return response
 
-def edit_settings(url, apikey, httpPort="25566", httpIP=None, dataPort=23334, forwardType=1, crossDomain=False, gzip=False, maxCompress=1, maxDonwload=10, zipType=1, loginCheckIp=True, loginInfo="", canFileManager=true, language="en_us", quickInstallAddr="https://mcsmanager.oss-cn-guangzhou.aliyuncs.com/quick_install.json", redisUrl=""):
+def edit_settings(url, apikey, httpPort="25566", httpIP=None, dataPort=23334, forwardType=1, crossDomain=False, gzip=False, maxCompress=1, maxDonwload=10, zipType=1, loginCheckIp=True, loginInfo="", canFileManager=True, language="en_us", quickInstallAddr="https://mcsmanager.oss-cn-guangzhou.aliyuncs.com/quick_install.json", redisUrl=""):
     # 修改面板设置
     # 返回类型：bool
     # 返回内容解释：True（成功）
@@ -67,6 +67,6 @@ def edit_settings(url, apikey, httpPort="25566", httpIP=None, dataPort=23334, fo
         'redisUrl': redisUrl
     }
 
-    response = sendRequest(api_url, uuid, remote_uuid, apikey, body=_body)
+    response = sendRequest(api_url, None, None, apikey, method="put",body=_body)
 
     return True
