@@ -96,3 +96,14 @@ def restart_app(url, uuid, remote_uuid, apikey):
     response = sendRequest(api_url, apikey, uuid, remote_uuid)
 
     return True
+
+def kill_app(url, uuid, remote_uuid, apikey):
+    # 强制关闭实例
+    # 返回类型：bool
+    # 返回内容解释：True（成功）
+
+    api_url = url + "/api/protected_instance/kill"
+
+    response = sendRequest(api_url, apikey, uuid, remote_uuid)
+
+    return True
