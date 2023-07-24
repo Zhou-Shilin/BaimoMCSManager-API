@@ -16,5 +16,18 @@
  - [ ] 计划任务管理 (`plans.py`)
  - [ ] 守护进程管理 ( `remote_service.py`)
 
+## 🔧安装
+使用pip安装最新版本:
+```bash
+pip install baimomcsm_api
+```
+从旧版本更新到最新版本:
+```bash
+pip install baimomcsm_api --upgrade
+```
+
 ## 📖使用方法
-施工中……
+**特别注意：导入库时必须使用`from baimomcsm_api import *`！**
+
+[GitBook文档](https://docs.baimoqilin.top/)
+[帮助改进该文档](https://github.com/Zhou-Shilin/BaimoMCSManager-API-doc)
