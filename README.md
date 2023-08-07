@@ -12,7 +12,7 @@
  - [x] 面板通用设置 ( `common.py`)
  - [x] 应用实例管理 (`applications.py`)
  - [x] 多用户管理 (`auth.py`)
- - [ ] 实例文件管理 (`files.py`)
+ - [x] 实例文件管理 (`files.py`)
  - [ ] 计划任务管理 (`plans.py`)
  - [ ] 守护进程管理 ( `remote_service.py`)
 
